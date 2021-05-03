@@ -9,7 +9,7 @@ impl<'a> System<'a> for VisibilitySystem {
                         Entities<'a>,
                         WriteStorage<'a, Viewshed>, 
                         WriteStorage<'a, Position>,
-                        ReadStorage<'a, Player>);
+                        ReadStorage<'a, Player> );
 
     fn run(&mut self, data : Self::SystemData) {
         let (mut map, entities, mut viewshed, pos, player) = data;
